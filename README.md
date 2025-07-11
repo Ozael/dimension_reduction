@@ -9,12 +9,13 @@ O objetivo é aplicar uma **redução de dimensionalidade** da imagem:
 - Para preto e branco (valores binários: 0 ou 255)
 
 
+
 ---
 
 ## 🚀 Etapas do Processo
 
-### 1. Leitura do arquivo PPM
-A imagem no formato `P3` é lida linha por linha, ignorando comentários e extraindo manualmente os valores RGB de cada pixel.
+### 1. Leitura do arquivo PPM binário (`P6`)
+A imagem no formato `P6` é lida em modo binário, ignorando comentários, extraindo manualmente os valores RGB de cada pixel.
 
 ### 2. Conversão para escala de cinza
 Cada pixel (R, G, B) é convertido para um único valor de intensidade com a fórmula de luminância: cinza = 0.299 * R + 0.587 * G + 0.114 * B
